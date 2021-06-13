@@ -56,7 +56,7 @@ android {
             applicationIdSuffix ".dev"
             versionNameSuffix "-dev"
         }
-        stage {
+        uat {
             dimension "flavor-type"
             applicationIdSuffix ".uat"
             versionNameSuffix "-uat"
