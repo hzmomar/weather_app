@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:teleport_air_asia/core/service/localization/get_localization.dart';
 import 'package:teleport_air_asia/core/viewmodel/dashboard/location_weather_vm.dart';
 import 'package:teleport_air_asia/ui/shared/roboto_style.dart';
 import 'package:teleport_air_asia/ui/view/base_view.dart';
@@ -68,11 +69,15 @@ class LocationWeather extends StatelessWidget {
                         return Container(
                           height: 100,
                           child: Center(
-                            child: IconButton(
-                              icon: const Icon(Icons.location_on_outlined),
+                            child: ElevatedButton.icon(
                               onPressed: () {
                                 getWeather(vm, context);
                               },
+                              icon: const Icon(Icons.location_on),
+                              label: Text(
+                                getLocalization.locateMe,
+                                style: RobotoStyle.button,
+                              ),
                             ),
                           ),
                         );

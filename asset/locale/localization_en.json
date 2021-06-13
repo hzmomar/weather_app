@@ -15,5 +15,6 @@
   "addCity" : "Add",
   "selectedCites" : "Selected Cities",
   "close" : "Close",
-  "update" : "Update"
+  "update" : "Update",
+  "locateMe" : "Locate Me"
 }

@@ -24,7 +24,7 @@ class CarouselWeather extends StatelessWidget {
           selector: (_, vm) => vm.isBusy,
           builder: (_, isBusy, __) {
             if (isBusy) {
-              return const LoadingIcon(height: 500);
+              return const LoadingIcon(height: 100);
             } else {
               return weatherCarousel(context, vm);
             }
@@ -93,38 +93,38 @@ class CarouselWeather extends StatelessWidget {
     );
   }
 
-  Card addCityCard(BuildContext context, CarouselWeatherVM vm) {
-    return Card(
-      elevation: 2,
-      child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            /// add button
-            IconButton(
-              icon: const Icon(
+  Widget addCityCard(BuildContext context, CarouselWeatherVM vm) {
+    return InkWell(
+      onTap: () {
+        showDialog(
+          context: context,
+          barrierDismissible: false,
+          builder: (_) {
+            return selectedCitiesDialog(vm, context);
+          },
+        );
+      },
+      child: Card(
+        elevation: 2,
+        child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              /// add icon
+              const Icon(
                 Icons.add,
                 color: ThemeColor.shade80,
               ),
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  barrierDismissible: false,
-                  builder: (_) {
-                    return selectedCitiesDialog(vm, context);
-                  },
-                );
-              },
-            ),
 
-            /// add weather text
-            Text(
-              getLocalization.addCity,
-              style: RobotoStyle.button.copyWith(
-                fontWeight: FontWeight.normal,
-              ),
-            )
-          ],
+              /// add weather text
+              Text(
+                getLocalization.addCity,
+                style: RobotoStyle.button.copyWith(
+                  fontWeight: FontWeight.normal,
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );

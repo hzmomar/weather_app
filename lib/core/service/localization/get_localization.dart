@@ -19,6 +19,7 @@ class GetLocalization {
   String get selectedCites => localizationService.text('selectedCites');
   String get close => localizationService.text('close');
   String get update => localizationService.text('update');
+  String get locateMe => localizationService.text('locateMe');
 }
 
 GetLocalization getLocalization = GetLocalization();
