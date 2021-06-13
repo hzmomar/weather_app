@@ -1,0 +1,118 @@
+
+linter:
+  rules:
+    - prefer_single_quotes
+    - sort_unnamed_constructors_first
+    - file_names
+    - library_prefixes
+    - prefer_contains
+    - curly_braces_in_flow_control_structures
+    - prefer_interpolation_to_compose_strings
+    - unnecessary_brace_in_string_interps
+    - unnecessary_this
+    - prefer_is_empty
+    - prefer_is_not_empty
+    - unnecessary_null_in_if_null_operators
+    - prefer_final_fields
+    - unnecessary_new
+    - prefer_const_constructors
+    - directives_ordering
+    - prefer_collection_literals
+    - avoid_function_literals_in_foreach_calls
+    - type_annotate_public_apis
+    - avoid_classes_with_only_static_members
+    - constant_identifier_names
+    - avoid_void_async
+    - prefer_final_locals
+    - unnecessary_parenthesis
+    - prefer_const_constructors_in_immutables
+    - annotate_overrides
+    - prefer_if_null_operators
+    - always_declare_return_types
+    - prefer_const_literals_to_create_immutables
+    - sort_child_properties_last
+    - avoid_unnecessary_containers
+    - join_return_with_assignment
+    - always_put_required_named_parameters_first
+    - avoid_relative_lib_imports
+    - close_sinks
+    - no_duplicate_case_values
+    - avoid_catching_errors
+    - avoid_return_types_on_setters
+    - avoid_unused_constructor_parameters
+    - await_only_futures
+    - empty_catches
+    - empty_constructor_bodies
+    - prefer_conditional_assignment
+    - recursive_getters
+    - slash_for_doc_comments
+    - unawaited_futures
+    - unnecessary_const
+
+
+
+
+
+
+
+analyzer:
+  errors:
+    prefer_single_quotes : error
+    sort_unnamed_constructors_first: error
+    missing_return: error
+    file_names: error
+    library_prefixes: error
+    prefer_contains: error
+    curly_braces_in_flow_control_structures: error
+    prefer_interpolation_to_compose_strings : error
+    unnecessary_brace_in_string_interps : error
+    unnecessary_this: error
+    prefer_is_empty : error
+    prefer_is_not_empty : error
+    invalid_assignment: error
+    unnecessary_null_in_if_null_operators: error
+    prefer_final_fields : error
+    unnecessary_new : error
+    prefer_const_constructors : error
+    directives_ordering : error
+    prefer_collection_literals : error
+    avoid_function_literals_in_foreach_calls : error
+    type_annotate_public_apis : error
+    avoid_classes_with_only_static_members : error
+    constant_identifier_names : error
+    avoid_void_async : error
+    prefer_final_locals : error
+    unnecessary_parenthesis : error
+    prefer_const_constructors_in_immutables : error
+    annotate_overrides : error
+    prefer_if_null_operators : error
+    always_declare_return_types : error
+    prefer_const_literals_to_create_immutables : error
+    sort_child_properties_last : error
+    avoid_unnecessary_containers : error
+    join_return_with_assignment : error
+    always_put_required_named_parameters_first : error
+    avoid_relative_lib_imports: error
+    close_sinks: error
+    no_duplicate_case_values : error
+    avoid_catching_errors: error
+    avoid_return_types_on_setters: error
+    avoid_unused_constructor_parameters: error
+    await_only_futures: error
+    empty_catches: error
+    empty_constructor_bodies: error
+    prefer_conditional_assignment: error
+    recursive_getters: error
+    slash_for_doc_comments: error
+    unawaited_futures: error
+    unnecessary_const: error
+    duplicate_import: error
+    unused_import: error
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+{
+  "error" : "Error",
+  "noInternetFullMsg" : "No internet Connection!! Please connect to internet and try again",
+  "splashScreen" : "Splash Screen",
+  "retry" : "Retry",
+  "cancel" : "Cancel",
+  "dashboard" : "Dashboard",
+  "feelsLike" : "Feels like",
+  "humidity" : "Humidity",
+  "minTemp" : "Min Temp",
+  "maxTemp" : "Max Temp",
+  "locationServiceDisabled" : "Please Enable Location Service",
+  "locationPermissionDenied" : "Location Permission Denied",
+  "forecast" : "5-day forecast",
+  "addCity" : "Add",
+  "selectedCites" : "Selected Cities",
+  "close" : "Close",
+  "update" : "Update"
+}
